@@ -244,7 +244,7 @@
 
       /* ---------- Format timeline ---------- */
       .timeline{
-        display:grid;grid-template-columns:repeat(5,1fr);gap:0;
+        display:grid;grid-template-columns:repeat(6,1fr);gap:0;
         background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;
       }
       .tl-step{padding:20px 18px 16px;position:relative}
@@ -475,7 +475,7 @@
           <p class="hero-sub">The pure driver series. One car, one fixed setup, identical for everyone — the championship is won on racecraft, consistency, and clean overtakes.</p>
           <div class="hero-chips">
             <span class="chip">Starts <b>Tue Dec 1, 2026</b></span>
-            <span class="chip">Lobby <b>6:50 PM ET</b></span>
+            <span class="chip">Lobby <b>7:00 PM ET</b></span>
             <span class="chip">Quali <b>8:00 PM ET</b></span>
             <span class="chip">Fixed setups <span class="dot">·</span> 2 × 20-min heats</span>
           </div>
@@ -488,7 +488,7 @@
             <div class="cd-cell"><div class="cd-num" id="cd-h">–</div><div class="cd-lab">Hours</div></div>
             <div class="cd-cell"><div class="cd-num" id="cd-m">–</div><div class="cd-lab">Mins</div></div>
             <div class="cd-cell"><div class="cd-num" id="cd-s">–</div><div class="cd-lab">Secs</div></div>
-            <div class="cd-note">Until the Round 1 lobby opens — <b>Tuesday, Dec 1, 2026 · 6:50 PM ET · Lime Rock Park</b></div>
+            <div class="cd-note">Until the Round 1 lobby opens — <b>Tuesday, Dec 1, 2026 · 7:00 PM ET · Lime Rock Park</b></div>
           </div>
         </div>
       </div>
@@ -557,12 +557,12 @@
         </div>
         <div class="timeline">
           <div class="tl-step">
-            <div class="tl-time">6:50 PM ET</div>
+            <div class="tl-time">7:00 PM ET</div>
             <div class="tl-name">Lobby opens</div>
             <p>Session goes up. Get in, get settled, get your wheel time in early.</p>
           </div>
           <div class="tl-step">
-            <div class="tl-time">70 min</div>
+            <div class="tl-time">60 min</div>
             <div class="tl-name">Open practice</div>
             <p>Everyone on the same fixed setup — the only variable is the driver.</p>
           </div>
@@ -575,6 +575,11 @@
             <div class="tl-time">20 min</div>
             <div class="tl-name">Heat 1</div>
             <p>Grid set by qualifying. Full Arrive &amp; Drive points on the line.</p>
+          </div>
+          <div class="tl-step">
+            <div class="tl-time">5 min</div>
+            <div class="tl-name">Break</div>
+            <p>Catch your breath and check the Heat 1 result — Heat 2 grids fully reversed.</p>
           </div>
           <div class="tl-step acid">
             <div class="tl-time">20 min</div>
@@ -764,8 +769,8 @@
         "use strict";
 
         /* ---------- Countdown to Round 1 lobby ---------- */
-        // Dec 1, 2026 6:50 PM Eastern (EST = UTC-5)
-        var target = Date.UTC(2026, 11, 1, 23, 50, 0);
+        // Dec 1, 2026 7:00 PM Eastern (EST = UTC-5)
+        var target = Date.UTC(2026, 11, 2, 0, 0, 0);
         var elD = document.getElementById("cd-d"),
             elH = document.getElementById("cd-h"),
             elM = document.getElementById("cd-m"),
